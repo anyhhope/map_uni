@@ -1,0 +1,159 @@
+/* Map styles start */
+
+.main-wrapper {
+    background: radial-gradient(29.67% 22.18% at 62.21% 83.66%, rgba(0, 0, 0, 0.196) 0%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(0deg, rgba(77, 85, 104, 0.36), rgba(77, 85, 104, 0.36)),
+        radial-gradient(32.68% 51.3% at 81.3% 73.43%, rgba(7, 69, 240, 0.35) 0%, rgba(245, 248, 255, 0) 100%),
+        linear-gradient(105.71deg, rgba(5, 67, 240, 0.39) 2.44%, rgba(53, 228, 255, 0.39) 100%),
+        url(../assets/images/misis-b-luvr.jpg) no-repeat;
+    background-size: 100% auto;
+
+    overflow: hidden;
+}
+
+.map {
+    min-width: 100vw;
+    height: calc(100vh - 84px);
+    margin: 0 auto;
+    position: relative;
+
+    -webkit-perspective: 3500px;
+    perspective: 3500px;
+    -webkit-perspective-origin: 0% 50%;
+    perspective-origin: 0% 50%;
+
+    /* transform: scale3d(0.8, 0.8, 0.8); */
+    transition: transform 1.2s;
+}
+
+/*центрирование и изометрия*/
+.b-floors {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 850px;
+    height: 421px;
+
+    -webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-20vmin);
+    transform: rotateX(70deg) rotateZ(-45deg) translateZ(-20vmin);
+
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.b-floor-wrap {
+    min-width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.b-floor-svg {
+    width: 100%;
+    height: 100%;
+}
+
+/*смещение по оси Z этажей кроме нулевого*/
+.b-floor-1-wrap {
+    transform: translateZ(20vh);
+}
+
+.b-floor-2-wrap {
+    transform: translateZ(40vh);
+}
+
+/*видимость дополнительных выступов у этажей относительно размера b-floors*/
+/*видимость входа на 1 этаж*/
+.b-floor-1-svg {
+    height: 529px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*выбор одного этажа без проекции*/
+.b-floors.floor-flatten {
+    transform: rotateX(0deg) rotateZ(0deg);
+    perspective: none;
+}
+
+.b-floor-wrap.floor-current {
+    display: block;
+    transform: translateZ(0);
+}
+
+/*Смена цвета внешней границы при наведении на этаж*/
+.b-floor-wrap:hover #b-floor-0-outer-border,
+.b-floor-wrap:hover #b-floor-1-outer-border,
+.b-floor-wrap:hover #b-floor-2-outer-border {
+    stroke: var(--white);
+}
+
+.b-floor-wrap.floor-current:hover #b-floor-0-outer-border,
+.b-floor-wrap.floor-current:hover #b-floor-1-outer-border,
+.b-floor-wrap.floor-current:hover #b-floor-2-outer-border {
+    stroke: rgb(0, 32, 105);
+}
+
+.b-floor-wrap.floor-current #b-2-left-hall,
+.b-floor-wrap.floor-current #b-2-right-hall {
+    display: none;
+}
+
+#b-floor-0-outer-border,
+#b-floor-1-outer-border,
+#b-floor-2-outer-border {
+    transition: 0.2s linear all;
+}
+
+/*появление внутренних границ только при выборе(клике) на этаж */
+.b-floor-wrap.floor-current #b-floor-0-border,
+.b-floor-wrap.floor-current #b-floor-1-border,
+.b-floor-wrap.floor-current #b-floor-2-border {
+    display: block;
+}
+
+#b-floor-0-border,
+#b-floor-1-border,
+#b-floor-2-border {
+    display: none;
+}
+
+.b-first-floor > .b-floor-1-wrap #b-floor-1-border{
+    display: none;
+}
+
+.b-first-floor > .b-floor-1-2-svg #b-floor-1-2-library-border{
+    display: none;
+}
+
+/*особый стиль 1 этажа с показом библиотеки*/
+
+.b-first-floor {
+    -webkit-transform: rotateX(70deg) rotateZ(-30deg) translateZ(-13vmin);
+    transform: rotateX(70deg) rotateZ(-30deg) translateZ(-13vmin);
+}
+
+.b-floor-1-2-svg {
+    transform: translateX(70vh) translateY(19vh) translateZ(23vh);
+    width: 216px;
+    height: 532px;
+}
+
+/*плавное изменение цвета выбранных помещений по кнопке*/
+path { transition: fill .4s ease; }
+
+/* Map styles end */
+
+@media screen and (max-width: 800px) {
+    .map {
+           transform: scale3d(0.5, 0.5, 0.5); 
+    }
+}
