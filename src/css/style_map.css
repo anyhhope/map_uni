@@ -100,6 +100,11 @@
     stroke: rgb(0, 32, 105);
 }
 
+.b-floor-wrap.floor-current #b-2-left-hall, 
+.b-floor-wrap.floor-current #b-2-right-hall {
+    display: none;
+}
+
 #b-floor-0-outer-border,
 #b-floor-1-outer-border,
 #b-floor-2-outer-border {
