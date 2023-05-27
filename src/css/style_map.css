@@ -1,5 +1,16 @@
 /* Map styles start */
 
+.main-wrapper {
+    background: radial-gradient(29.67% 22.18% at 62.21% 83.66%, rgba(0, 0, 0, 0.196) 0%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(0deg, rgba(77, 85, 104, 0.36), rgba(77, 85, 104, 0.36)),
+        radial-gradient(32.68% 51.3% at 81.3% 73.43%, rgba(7, 69, 240, 0.35) 0%, rgba(245, 248, 255, 0) 100%),
+        linear-gradient(105.71deg, rgba(5, 67, 240, 0.39) 2.44%, rgba(53, 228, 255, 0.39) 100%),
+        url(../assets/images/misis-b-luvr.jpg) no-repeat;
+    background-size: 100% auto;
+
+    overflow: hidden;
+}
+
 .map {
     min-width: 100vw;
     height: calc(100vh - 84px);
@@ -11,15 +22,8 @@
     -webkit-perspective-origin: 0% 50%;
     perspective-origin: 0% 50%;
 
-    overflow: hidden;
-
-    opacity: 0.75;
-    background: radial-gradient(29.67% 22.18% at 62.21% 83.66%, rgba(0, 0, 0, 0.196) 0%, rgba(0, 0, 0, 0) 100%),
-        linear-gradient(0deg, rgba(77, 85, 104, 0.36), rgba(77, 85, 104, 0.36)), 
-        radial-gradient(32.68% 51.3% at 81.3% 73.43%, rgba(7, 69, 240, 0.35) 0%, rgba(245, 248, 255, 0) 100%),
-        linear-gradient(105.71deg, rgba(5, 67, 240, 0.39) 2.44%, rgba(53, 228, 255, 0.39) 100%), 
-        url(../assets/images/misis-b-luvr.jpg) no-repeat;
-    background-size: 100% auto;
+    /* transform: scale3d(0.8, 0.8, 0.8); */
+    transition: transform 1.2s;
 }
 
 /*центрирование и изометрия*/
@@ -38,12 +42,12 @@
     transform: rotateX(70deg) rotateZ(-45deg) translateZ(-20vmin);
 
     -webkit-transition: -webkit-transform 0.8s;
-	transition: transform 0.8s;
+    transition: transform 0.8s;
 
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
- 
+
 .b-floor-wrap {
     min-width: 100%;
     height: 100%;
@@ -93,12 +97,12 @@
 }
 
 .b-floor-wrap.floor-current:hover #b-floor-0-outer-border,
-.b-floor-wrap.floor-current:hover #b-floor-1-outer-border, 
+.b-floor-wrap.floor-current:hover #b-floor-1-outer-border,
 .b-floor-wrap.floor-current:hover #b-floor-2-outer-border {
     stroke: rgb(0, 32, 105);
 }
 
-.b-floor-wrap.floor-current #b-2-left-hall, 
+.b-floor-wrap.floor-current #b-2-left-hall,
 .b-floor-wrap.floor-current #b-2-right-hall {
     display: none;
 }
@@ -122,6 +126,14 @@
     display: none;
 }
 
+.b-first-floor > .b-floor-1-wrap #b-floor-1-border{
+    display: none;
+}
+
+.b-first-floor > .b-floor-1-2-svg #b-floor-1-2-library-border{
+    display: none;
+}
+
 /*особый стиль 1 этажа с показом библиотеки*/
 
 .b-first-floor {
@@ -135,4 +147,13 @@
     height: 532px;
 }
 
+/*плавное изменение цвета выбранных помещений по кнопке*/
+path { transition: fill .4s ease; }
+
 /* Map styles end */
+
+@media screen and (max-width: 800px) {
+    .map {
+           transform: scale3d(0.5, 0.5, 0.5); 
+    }
+}

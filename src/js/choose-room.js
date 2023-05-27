@@ -7,7 +7,8 @@ const bBuilding = [
         wardrobe: ['b-0-wardrobe'],
         class: [],
         library: [],
-        dk: []
+        dk: [],
+        restroom: ['b-0-toilet-w', 'b-0-toilet-m'],
     },
     {
         lounge: ['b-1-lounge-zone-1', 'b-1-lounge-zone-2', 'b-1-lounge-zone-3', 'b-1-lounge-zone-4'],
@@ -16,8 +17,9 @@ const bBuilding = [
         stairs: ['b-1-staircase-center', 'b-1-staircase-right', 'b-1-staircase-library-down', 'b-1-staircase-library-up'],
         wardrobe: [],
         class: ['b-11', 'b-12', 'b-3', 'b-4'],
-        library: ['b-1-library', 'b-1-library-1'],
-        dk: []
+        library: ['b-1-library', 'b-1-library-1', 'b-1-2-library-background'],
+        dk: [],
+        restroom: ['b-1-toilet-w', 'b-1-toilet-m', 'b-1-toilet-m-invalid'],
     },
     {
         lounge: ['b-2-lounge-zone-1', 'b-2-lounge-zone-2', 'b-2-lounge-zone-3', 'b-2-lounge-zone-4'],
@@ -27,7 +29,8 @@ const bBuilding = [
         wardrobe: [],
         class: ['b-24', 'b-23'],
         library: [],
-        dk: ['b-2-house-of-culture']
+        dk: ['b-2-house-of-culture'],
+        restroom: ['b-2-toilet-w', 'b-2-toilet-m'],
     }
 ]
 
@@ -39,7 +42,8 @@ const colors = {
     wardrobe: '#0a1e64',
     class: '#aa0a41',
     library: '#8c00af',
-    dk: '#ff9100'
+    dk: '#ff9100',
+    restroom: '#0a1e64',
 }
 
 //изменения цвета всех элементов по кнопке
@@ -48,7 +52,10 @@ const menuButtons = document.querySelectorAll('.menu-btn');
 function changeColourById(element, colour) {
     for (let i = 0; i < element.length; i++) {
         let room = document.getElementById(element[i]);
-        room.style.fill = colour;
+        if(room.id == 'b-1-2-library-background' && room.style.fill == 'rgb(140, 0, 175)') {
+            room.style.fill = '#ffffff';
+        }
+        else room.style.fill = colour;
     }
 }
 
@@ -61,6 +68,7 @@ function chooseRoom(btn) {
 function removeRoom(btn) {
     let target = btn.id.slice(4);
     btn.classList.remove('menu-btn-active');
+    if(!btn.classList.contains('menu-btn-tool')) btn.classList.add('hidden');
     bBuilding.forEach(floor => changeColourById(floor[target], '#c0d5f2'));
 }
 
