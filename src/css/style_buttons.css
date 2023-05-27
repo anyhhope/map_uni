@@ -1,0 +1,97 @@
+/* Buttons start */
+
+.buttons {
+    width: 70px;
+    height: 432px;
+    position: fixed;
+    top: 38vh;
+    right: 10vh;
+    z-index: 1000;
+}
+
+.buttons-floor-wrap {
+    width: 70px;
+    background: linear-gradient(180deg, rgba(3, 80, 158, 0) 0%, #03509E 100%), #5AC0D7;
+    border-radius: 25px;
+}
+
+.buttons-floor {
+    height: 70px;
+    width: inherit;
+
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+    transition: 0.2s linear all;
+}
+
+#buttons-floor-2 {
+    border-radius: 25px 25px 0 0;
+    background-image: url(../assets/images/2-number-dark.svg);
+    background-size: 50%;
+}
+
+#buttons-floor-1 {
+    background-image: url(../assets/images/1-number-dark.svg);
+    background-size: 37%;
+}
+
+#buttons-floor-0 {
+    border-radius: 0 0 25px 25px;
+    background-image: url(../assets/images/0-number-dark.svg);
+    background-size: 58%;
+}
+
+.buttons-floor:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn-home-wrap {
+    width: 70px;
+    height: 76px;
+    margin-top: 40px;
+    background: linear-gradient(180deg, rgba(3, 80, 158, 0) 0%, #03509E 100%), #5AC0D7;
+    border-radius: 25px;
+}
+
+.btn-home:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn-home{
+    height: 70px;
+    width: inherit;
+
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+    transition: 0.2s linear all;
+}
+
+#buttons-floor-home {
+    border-radius: 25px;
+    background-image: url(../assets/images/btn-home.svg);
+    background-size: 67%;
+}
+
+.btn-floor-back-wrap {
+    margin-top: 20px;
+}
+
+#buttons-floor-back {
+    border-radius: 25px;
+    background-image: url(../assets/images/btn-arrow.svg);
+    background-size: 67%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons end */

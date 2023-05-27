@@ -1,0 +1,117 @@
+/* Menu styles start */
+
+.menu {
+    height: calc(100vh - 84px);
+    width: 52vh;
+
+    position: fixed;
+
+    padding: 4vh 0 4vh 4vh;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: var(--dark-blue);
+    box-shadow: 4px 52px 104px 2px rgba(0, 0, 0, 0.41);
+    border-radius: 0px 45px 45px 0px;
+    /* border-right: 8px solid #38445a; */
+
+    transition: 1s linear all;
+    transform: translateX(-95%);
+    z-index: 999;
+}
+
+.menu-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu:hover {
+    transition: 0.3s linear;
+    transform: translateX(0%);
+}
+
+.menu.menu-active {
+    transform: translateX(0%);
+}
+
+.menu-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-btn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 8px 0px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+
+    border: none;
+    background: linear-gradient(262.12deg, #31CFFE 3.21%, #2E96F9 42.53%, #1F7FED 67.74%, #1E49C1 100%);
+    border-radius: 100px;
+
+    transition: 0.3s linear all;
+}
+
+
+.menu-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    background: linear-gradient(262.12deg, #fe9b31 3.21%, #da764f 42.53%, #ed6e1f 67.74%, #c1671e 100%);
+}
+
+.menu-btn.menu-btn-active {
+    background: linear-gradient(262.12deg, #fe9b31 3.21%, #da764f 42.53%, #ed6e1f 67.74%, #c1671e 100%);
+}
+
+.menu-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.menu-img-1 {
+    animation: showBlock 0.3s linear forwards;
+}
+
+.menu-img-2 {
+    display: none;
+    animation: showBlock 0.3s linear forwards;
+}
+
+.menu-btn-to-open-wrap {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-to-open {
+    width: 15px;
+    height: 50px;
+    margin-right: 5px;
+
+    background-image: url(../assets/images/menu-button.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+@keyframes showBlock {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Menu styles end */

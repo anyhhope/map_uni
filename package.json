@@ -1,0 +1,33 @@
+{
+  "name": "map_uni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "SET NODE_ENV='production' && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyhhope/map_uni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anyhhope/map_uni/issues"
+  },
+  "homepage": "https://github.com/anyhhope/map_uni#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.4",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "json5": "^2.2.3"
+  }
+}
