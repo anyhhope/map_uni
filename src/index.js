@@ -1,7 +1,3 @@
-import './css/style_header.css'
-import './css/style_menu.css'
-import './css/style_map.css'
-import './css/style_buttons.css'
 import './js/test.js'
 import './js/map.js'
 import './js/choose-room.js'

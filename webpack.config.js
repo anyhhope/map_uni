@@ -18,10 +18,6 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
-            // {
-            //     test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
-            //     type: 'asset/resource',
-            // },
             {
                 test: /\.json5$/i,
                 type: 'json',
@@ -41,6 +37,10 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/assets/'),
                     to: 'assets',
+                },
+                {
+                    from: path.resolve(__dirname, 'src/css/'),
+                    to: 'css',
                 },
             ],
         }),
