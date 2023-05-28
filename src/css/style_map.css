@@ -171,6 +171,7 @@ rect {
 .hidden {
     display: none;
 }
+
 /* Map styles end */
 
 @media screen and (max-width: 800px) {
@@ -178,7 +179,9 @@ rect {
         transform: scale3d(0.5, 0.5, 0.5);
     }
 
-    .main-wrapper {
-        height: calc(100svh - 84px);
+    body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
     }
 }
