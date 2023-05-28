@@ -2,7 +2,6 @@
 const level = document.querySelectorAll('.b-floor-wrap'); //массив этажей
 const levels = document.querySelector('.b-floors'); //wrapper всех этажей
 const library = document.querySelector('.b-floor-1-2-svg'); //второй этаж библиотеки
-changeClass(library, 'hidden');
 
 level.forEach(el => el.addEventListener('click', function () {
     el.classList.add('floor-current');
