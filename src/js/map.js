@@ -65,6 +65,7 @@ btnArrow.addEventListener('click', () => {
 //переход на вид всех корпусов по кнопке круг
 btnHome.addEventListener('click', () => {
     levels.classList.toggle('hidden'); //пока что просто все этажи пропадают
+    document.querySelector('.all-buildings').classList.toggle('hidden');
 });
 
 function changeClass(el, className) {

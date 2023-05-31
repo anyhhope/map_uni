@@ -50,7 +50,7 @@ const colors = {
     library: '#8c00af',
     dk: '#ff9100',
     restroom: '#0a1e64',
-    food: '#ff9100',
+    food: '#0a1e64',
     money: '#0a1e64',
 }
 
