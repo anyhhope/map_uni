@@ -4,8 +4,8 @@
   lounge: {
     name: 'Лаундж-зоны',
     info: {
-      ru: 'Столовая НИТУ МИСИС является одной из лучших столовых в Москве. Она предлагает разнообразное меню, включающее в себя блюда русской, европейской и азиатской кухни. Столовая имеет большое количество мест, что позволяет без труда разместить всех посетителей. Это идеальное место для здорового и вкусного питания студентов и персонала университета.',
-      en: 'text',
+      ru: 'В Университете МИСИС представлено большое количество лаунж-зон, где студенты и сотрудники могут отдохнуть после занятий, встретиться с друзьями и знакомыми, а также продуктивно поработать. Зоны оборудованы комфортными диванами, креслами и другой мягкой мебелью. Кроме того, в лаунж-зонах проводятся различные мероприятия для студентов, сотрудников и гостей университета.',
+      en: 'University MISIS  has a large number of lounge areas where students and staff can relax after classes, meet friends and acquaintances, as well as work productively. These areas are equipped with comfortable sofas, armchairs and other soft furniture. In addition, various events are held in the lounge areas for students, staff and guests of the university.',
     },
     imglink: 'assets/images_html/misis-stairs.jpg',
   },
@@ -36,13 +36,13 @@
   dk: {
     name: 'Дом культуры',
     info: {
-      ru: 'Столовая НИТУ МИСИС является одной из лучших столовых в Москве. Она предлагает разнообразное меню, включающее в себя блюда русской, европейской и азиатской кухни. Столовая имеет большое количество мест, что позволяет без труда разместить всех посетителей. Это идеальное место для здорового и вкусного питания студентов и персонала университета.',
-      en: 'text',
+      ru: 'Дом культуры является центром художественных и культурных мероприятий для студентов и сотрудников. Здесь проводится широкий спектр программ и мероприятий, включая концерты, выставки, театральные представления и показы фильмов. Управление культуры и молодежной политики Университета МИСИС постоянно проводит мероприятия для студентов, а также поддерживает работу множества творческих студий, где каждый может найти увлечение по душе и единомышленников.',
+      en: 'The House of Culture is a center of artistic and cultural events for students and staff. It hosts a wide range of programs and events, including concerts, exhibitions, theatrical performances and film screenings. The Department of Culture and Youth Policy of MISIS University constantly holds events for students, and also supports the work of many creative studios, where everyone can find a hobby to their liking and like-minded people.',
     },
     imglink: 'assets/images_html/dk.jpg',
   },
   canteen: {
-    name: 'Дом культуры',
+    name: 'Столовая',
     info: {
       ru: 'Столовая НИТУ МИСИС является одной из лучших столовых в Москве. Она предлагает разнообразное меню, включающее в себя блюда русской, европейской и азиатской кухни. Столовая имеет большое количество мест, что позволяет без труда разместить всех посетителей. Это идеальное место для здорового и вкусного питания студентов и персонала университета.',
       en: 'University MISIS canteen is one of the best canteens in Moscow. It offers a varied menu, including dishes of Russian, European and Asian cuisine. The dining room has a large number of seats, which allows you to easily accommodate all visitors. This is an ideal place for healthy and delicious meals for students and university staff.',

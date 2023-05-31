@@ -1,4 +1,3 @@
-import './js/test.js'
 import './js/map.js'
 import './js/choose-room.js'
 import './js/menu.js'
