@@ -197,7 +197,8 @@
         margin-right: 10px;
     }
 
-    .menu-content-info {
+    .menu-content-info,
+    .menu-btn {
         font-size: 12px;
         line-height: normal;
     }
