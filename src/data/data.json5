@@ -3,7 +3,50 @@
   imglink: 'assets/images_html/misis-b-outside.jpg',
   lounge: {
     name: 'Лаундж-зоны',
-    info: 'Аудитория Б-1 НИТУ МИСИС может вместить большое количество студентов, что делает ее идеальным местом для проведения лекций и семинаров по различным предметам. Здесь также проводятся различные мероприятия, такие как конференции, симпозиумы и презентации.',
+    info: {
+      ru: 'Столовая НИТУ МИСИС является одной из лучших столовых в Москве. Она предлагает разнообразное меню, включающее в себя блюда русской, европейской и азиатской кухни. Столовая имеет большое количество мест, что позволяет без труда разместить всех посетителей. Это идеальное место для здорового и вкусного питания студентов и персонала университета.',
+      en: 'text',
+    },
     imglink: 'assets/images_html/misis-stairs.jpg',
   },
+  labs: {
+    name: 'Лаборатории',
+    info: {
+      ru: 'Лаборатории Университета МИСИС доступны для студентов всех факультетов и направлений подготовки. Они являются неотъемлемой частью образовательного процесса в университете и помогают студентам глубже понимать теоретические концепции и применять их на практике.',
+      en: 'The laboratories of University MISIS are available to students of all faculties and fields of study. They are an integral part of the educational process at the university and help students to better understand theoretical concepts and apply them in practice.',
+    },
+    imglink: 'assets/images_html/laboratory.jpeg',
+  },
+  class: {
+    name: 'Аудитории',
+    info: {
+      ru: 'Аудитории Университета  МИСИС могут вместить большое количество студентов, что делает их идеальным местом для проведения лекций и семинаров по различным предметам. Здесь также проводятся различные мероприятия, такие как конференции, симпозиумы и презентации.',
+      en: 'The Lecture Halls of University MISIS University can accommodate a large number of students, which makes them an ideal place for lectures and seminars on various subjects. It also hosts various events such as conferences, symposiums and presentations.',
+    },
+    imglink: 'assets/images_html/class.jpg',
+  },
+  library: {
+    name: 'Библиотека',
+    info: {
+      ru: 'Библиотека в Университета МИСИС оснащена большой коллекцией книг, журналов и других учебных материалов, которые охватывают широкий спектр предметов. Здесь есть достаточно мест для сидения, индивидуальные кабинки для занятий и компьютерные рабочие места с доступом в Интернет.',
+      en: 'The library at University MISIS is equipped with a large collection of books, magazines and other educational materials that cover a wide range of subjects. There are enough seats, individual study booths and computer workstations with Internet access.',
+    },
+    imglink: 'assets/images_html/library.JPG',
+  },
+  dk: {
+    name: 'Дом культуры',
+    info: {
+      ru: 'Столовая НИТУ МИСИС является одной из лучших столовых в Москве. Она предлагает разнообразное меню, включающее в себя блюда русской, европейской и азиатской кухни. Столовая имеет большое количество мест, что позволяет без труда разместить всех посетителей. Это идеальное место для здорового и вкусного питания студентов и персонала университета.',
+      en: 'text',
+    },
+    imglink: 'assets/images_html/dk.jpg',
+  },
+  canteen: {
+    name: 'Дом культуры',
+    info: {
+      ru: 'Столовая НИТУ МИСИС является одной из лучших столовых в Москве. Она предлагает разнообразное меню, включающее в себя блюда русской, европейской и азиатской кухни. Столовая имеет большое количество мест, что позволяет без труда разместить всех посетителей. Это идеальное место для здорового и вкусного питания студентов и персонала университета.',
+      en: 'University MISIS canteen is one of the best canteens in Moscow. It offers a varied menu, including dishes of Russian, European and Asian cuisine. The dining room has a large number of seats, which allows you to easily accommodate all visitors. This is an ideal place for healthy and delicious meals for students and university staff.',
+    },
+    imglink: 'assets/images_html/misis-stairs.jpg',
+  }
 }

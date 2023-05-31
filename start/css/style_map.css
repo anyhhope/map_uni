@@ -69,11 +69,11 @@
 
 /*смещение по оси Z этажей кроме нулевого*/
 .b-floor-1-wrap {
-    transform: translateZ(20vh);
+    transform: translateZ(150px);
 }
 
 .b-floor-2-wrap {
-    transform: translateZ(40vh);
+    transform: translateZ(300px);
 }
 
 /*видимость дополнительных выступов у этажей относительно размера b-floors*/
@@ -153,7 +153,7 @@
 }
 
 .b-floor-1-2-svg {
-    transform: translateX(70vh) translateY(19vh) translateZ(23vh);
+    transform: translateX(344px) translateY(307px) translateZ(273px);
     width: 216px;
     height: 532px;
 }

@@ -1,0 +1,26 @@
+{
+    lounge: {
+        ru: 'Лаунж зоны',
+        en: 'Lounge areas',
+    },
+    labs: {
+        ru: 'Лаборатории',
+        en: 'Laboratories',
+    },
+    canteen: {
+        ru: 'Столовая',
+        en: 'Canteen',
+    },
+    class: {
+        ru: 'Аудитории',
+        en: 'Lecture halls',
+    },
+    dk: {
+        ru: 'Дом культуры',
+        en: 'House of Culture',
+    },
+    library: {
+        ru: 'Библиотека',
+        en: 'Library',
+    },
+}

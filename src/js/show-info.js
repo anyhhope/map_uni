@@ -1,4 +1,7 @@
 import json from '../data/data.json5';
+import json_lang from '../data/lang.json5';
+
+import {lang} from './menu.js';
 
 let menuButtons = document.querySelectorAll('.menu-btn');
 let blockInfo = document.querySelector('.menu-content-info');
@@ -13,11 +16,12 @@ menuButtons.forEach(btn => btn.addEventListener('click', () => {
         }
     });
     if(btn.classList.contains('menu-btn-active')) {
-        blockInfo.innerHTML += json.lounge.info;
+        let typeOfBtn = btn.id.slice(4);
+        blockInfo.innerHTML = json[typeOfBtn].info[lang];
         blockInfo.style.animation = 'showBlock 0.8s linear forwards';
         btn.innerHTML += '  ←';
-        menuImg.src = json.lounge.imglink;
-        menuImg.alt = json.lounge.name;
+        menuImg.src = json[typeOfBtn].imglink;
+        menuImg.alt = json_lang[typeOfBtn][lang];
         menuImg.style.animation = 'showBlock 0.8s linear forwards';
     }
     else {
