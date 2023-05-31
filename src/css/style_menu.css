@@ -2,7 +2,7 @@
 
 .menu {
     height: calc(100vh - 84px);
-    width: 52vh;
+    width: 400px;
 
     position: fixed;
 
@@ -35,7 +35,8 @@
     transform: translateX(0%);
 }
 
-.menu-btns {
+.menu-btns,
+.menu-btns-tool {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

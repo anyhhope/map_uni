@@ -13,3 +13,8 @@ window.addEventListener('load', function() {
     }
   });
   
+
+//   .element {
+//     will-change: transform;
+//   }
+  
