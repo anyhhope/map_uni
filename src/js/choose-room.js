@@ -9,6 +9,8 @@ const bBuilding = [
         library: [],
         dk: [],
         restroom: ['b-0-toilet-w', 'b-0-toilet-m'],
+        food: ['b-0-snack-background'],
+        money: ['bankomat-icon-background', 'bankomat-icon-background_2'],
     },
     {
         lounge: ['b-1-lounge-zone-1', 'b-1-lounge-zone-2', 'b-1-lounge-zone-3', 'b-1-lounge-zone-4'],
@@ -20,6 +22,8 @@ const bBuilding = [
         library: ['b-1-library', 'b-1-library-1', 'b-1-2-library-background'],
         dk: [],
         restroom: ['b-1-toilet-w', 'b-1-toilet-m', 'b-1-toilet-m-invalid'],
+        food: [],
+        money: [],
     },
     {
         lounge: ['b-2-lounge-zone-1', 'b-2-lounge-zone-2', 'b-2-lounge-zone-3', 'b-2-lounge-zone-4'],
@@ -31,6 +35,8 @@ const bBuilding = [
         library: [],
         dk: ['b-2-house-of-culture'],
         restroom: ['b-2-toilet-w', 'b-2-toilet-m'],
+        food: [],
+        money: [],
     }
 ]
 
@@ -44,6 +50,8 @@ const colors = {
     library: '#8c00af',
     dk: '#ff9100',
     restroom: '#0a1e64',
+    food: '#ff9100',
+    money: '#0a1e64',
 }
 
 //изменения цвета всех элементов по кнопке
