@@ -172,6 +172,47 @@ rect {
     display: none;
 }
 
+#b-1-entrance-1 {
+    display: block;
+}
+/* .b-floor-1-wrap {
+    position: absolute;
+} */
+
+.b-floor-1-wrap::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    top: 535px;
+    left: 506px;
+    background-image: url('../assets/images/arrow.svg');
+    background-size: 100px 100px;
+    transform: rotateZ(90deg);
+
+    animation-name: movement;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.b-floor-1-wrap.floor-current::after {
+    display: none;
+}
+
+@keyframes movement {
+    0% {
+        transform: translateY(0) rotateZ(90deg);
+    }
+    50% {
+        transform: translateY(-20px) rotateZ(90deg);
+    }
+    100% {
+        transform: translateY(0px) rotateZ(90deg);
+    }
+}
+
 /* Map styles end */
 
 @media screen and (max-width: 800px) {
