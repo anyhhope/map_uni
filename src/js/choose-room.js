@@ -1,7 +1,7 @@
 const bBuilding = [
     {
         lounge: [],
-        labs: ['b-021', 'b-022', 'b-025'],
+        labs: ['b-021', 'b-022', 'b-025', 'b-026', 'b-027', 'b-028'],
         lift: ['b-0-elevator-down-1', 'b-0-elevator-down-2'],
         stairs: ['b-0-staircase-center', 'b-0-staircase-right'],
         wardrobe: ['b-0-wardrobe'],
