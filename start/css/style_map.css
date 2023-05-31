@@ -1,6 +1,8 @@
 /* Map styles start */
 
 .main-wrapper {
+    height: calc(100vh - 84px);
+
     background: radial-gradient(29.67% 22.18% at 62.21% 83.66%, rgba(0, 0, 0, 0.196) 0%, rgba(0, 0, 0, 0) 100%),
         linear-gradient(0deg, rgba(77, 85, 104, 0.36), rgba(77, 85, 104, 0.36)),
         radial-gradient(32.68% 51.3% at 81.3% 73.43%, rgba(7, 69, 240, 0.35) 0%, rgba(245, 248, 255, 0) 100%),
@@ -22,7 +24,6 @@
     -webkit-perspective-origin: 0% 50%;
     perspective-origin: 0% 50%;
 
-    /* transform: scale3d(0.8, 0.8, 0.8); */
     -webkit-transition: transform 1.2s;
     -moz-transition: transform 1.2s;
     -ms-transition: transform 1.2s;
@@ -175,6 +176,7 @@ rect {
 #b-1-entrance-1 {
     display: block;
 }
+
 /* .b-floor-1-wrap {
     position: absolute;
 } */
@@ -205,9 +207,11 @@ rect {
     0% {
         transform: translateY(0) rotateZ(90deg);
     }
+
     50% {
         transform: translateY(-20px) rotateZ(90deg);
     }
+
     100% {
         transform: translateY(0px) rotateZ(90deg);
     }
@@ -215,14 +219,50 @@ rect {
 
 /* Map styles end */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
     .map {
-        transform: scale3d(0.5, 0.5, 0.5);
+        transform: scale3d(0.8, 0.8, 0.8);
+    }
+}
+
+
+@media screen and (max-width: 885px) {
+    .map {
+        transform: scale3d(0.7, 0.7, 0.7);
     }
 
+    .b-first-floor {
+        -webkit-transform: rotateX(70deg) rotateZ(-30deg) translateZ(-13vmin) translateX(-49px);
+        transform: rotateX(70deg) rotateZ(-30deg) translateZ(-13vmin) translateX(-49px);
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .map {
+        transform: scale3d(0.6, 0.6, 0.6) translateX(-38px);
+    }
+
+    .b-first-floor {
+        -webkit-transform: rotateX(70deg) rotateZ(-30deg) translateZ(-13vmin) translateX(-49px);
+        transform: rotateX(70deg) rotateZ(-30deg) translateZ(-13vmin) translateX(-49px);
+    }
+}
+
+@media screen and (max-width: 645px) {
     body {
         margin: 0;
         height: 100%;
         overflow: hidden;
+    }
+
+    .main-wrapper {
+        height: calc(100% - 49px);
+    }
+
+    .map {
+        height: calc(100vh - 49px);
+        min-width: 100vw;
+
+        transform: scale3d(0.4, 0.4, 0.4) translateX(-200px);
     }
 }

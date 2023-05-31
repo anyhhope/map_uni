@@ -68,7 +68,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dat
   \************************/
 /***/ (() => {
 
-eval("window.addEventListener('load', function() {\r\n    setTimeout(function() {\r\n      window.scrollTo(0, 1);\r\n    }, 0);\r\n  });\r\n\r\n  \r\n  window.addEventListener('resize', function() {\r\n    if (window.innerHeight === window.outerHeight) {\r\n      console.log('Панель навигации скрыта');\r\n    } else {\r\n      console.log('Панель навигации не скрыта');\r\n    }\r\n  });\r\n  \r\n\r\n//   .element {\r\n//     will-change: transform;\r\n//   }\r\n  \n\n//# sourceURL=webpack://map_uni/./src/js/test.js?");
+eval("// window.addEventListener('load', function() {\r\n//     setTimeout(function() {\r\n//       window.scrollTo(0, 1);\r\n//     }, 0);\r\n//   });\r\n\r\n  \r\n//   window.addEventListener('resize', function() {\r\n//     if (window.innerHeight === window.outerHeight) {\r\n//       console.log('Панель навигации скрыта');\r\n//     } else {\r\n//       console.log('Панель навигации не скрыта');\r\n//     }\r\n//   });\r\n  \r\n\r\n//   .element {\r\n//     will-change: transform;\r\n//   }\r\n  \n\n//# sourceURL=webpack://map_uni/./src/js/test.js?");
 
 /***/ }),
 

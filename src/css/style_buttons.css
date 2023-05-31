@@ -1,12 +1,15 @@
 /* Buttons start */
 
 .buttons {
-    width: 70px;
-    height: 432px;
     position: fixed;
     top: 38vh;
     right: 10vh;
-    z-index: 1000;
+}
+
+.buttons-add {
+    position: fixed;
+    top: 70vh;
+    right: 10vh;
 }
 
 .buttons-floor-wrap {
@@ -103,3 +106,47 @@
 }
 
 /* Buttons end */
+
+@media screen and (max-width: 1170px) {
+    .buttons {
+        top: 70vh;
+        right: 10px;
+    }
+
+    .buttons-add {
+        top: 9vh;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .buttons {
+        width: 40px;
+    }
+
+    .buttons-add,
+    .btn-home-wrap, 
+    .btn-home {
+        width: 40px;
+    }
+
+    /* .buttons-floor-wrap {
+        width: 40px;
+    } */
+
+    .buttons-floor, 
+    .btn-home-wrap, 
+    .btn-home {
+        height: 40px;
+    }
+
+    #buttons-floor-home,
+    #buttons-floor-back {
+        border-radius: 16px;
+    }
+
+    .btn-home-wrap {
+        margin-top: 18px;
+    }
+
+}
