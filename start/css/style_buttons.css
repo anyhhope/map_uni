@@ -109,7 +109,8 @@
 
 @media screen and (max-width: 1170px) {
     .buttons {
-        top: 70vh;
+        top: auto;
+        bottom: 20px;
         right: 10px;
     }
 
@@ -122,6 +123,7 @@
 @media screen and (max-width: 645px) {
     .buttons {
         width: 40px;
+        bottom: 40px;
     }
 
     .buttons-add,
