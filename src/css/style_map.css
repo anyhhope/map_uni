@@ -8,7 +8,7 @@
         radial-gradient(32.68% 51.3% at 81.3% 73.43%, rgba(7, 69, 240, 0.35) 0%, rgba(245, 248, 255, 0) 100%),
         linear-gradient(105.71deg, rgba(5, 67, 240, 0.39) 2.44%, rgba(53, 228, 255, 0.39) 100%),
         url(../assets/images/misis-b-luvr.jpg) no-repeat;
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
 
     overflow: hidden;
 }
@@ -233,6 +233,22 @@ rect {
     100% {
         opacity: 1;
     }
+}
+
+.b_group {
+    position: relative;
+}
+
+.b_group::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    z-index: 900;
 }
 
 /* Map styles end */

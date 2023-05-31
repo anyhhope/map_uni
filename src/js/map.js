@@ -62,10 +62,20 @@ btnArrow.addEventListener('click', () => {
     btnArrow.classList.add('hidden');
 });
 
+let allBuildings = document.querySelector('.all-buildings');
+let wasArrow = false;
 //переход на вид всех корпусов по кнопке круг
 btnHome.addEventListener('click', () => {
-    levels.classList.toggle('hidden'); //пока что просто все этажи пропадают
-    document.querySelector('.all-buildings').classList.toggle('hidden');
+    levels.classList.toggle('hidden');
+    if(allBuildings.classList.contains('hidden') && !btnArrow.classList.contains('hidden')) {
+        btnArrow.classList.add('hidden');
+        wasArrow = true;
+    }
+    else if(!allBuildings.classList.contains('hidden') && btnArrow.classList.contains('hidden') && wasArrow) {
+        btnArrow.classList.remove('hidden');
+        wasArrow = false;
+    }
+    allBuildings.classList.toggle('hidden');
 });
 
 function changeClass(el, className) {
