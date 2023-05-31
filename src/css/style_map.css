@@ -314,3 +314,19 @@ rect {
         transform: scale3d(0.7, 0.7, 0.7);
     }
 }
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .map {
+        height: 100vh;
+        top: 32px;
+        transform: scale3d(0.5, 0.5, 0.5) translateX(-50px);
+    }
+
+    .main-wrapper {
+        height: 100%;
+    }
+
+    .all-buildings {
+        top: -94px;
+    }
+}

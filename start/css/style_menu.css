@@ -203,3 +203,13 @@
         line-height: normal;
     }
 }
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .menu {
+        height: 100%;
+    }
+
+    .menu-content-img {
+        display: none;
+    }
+}
