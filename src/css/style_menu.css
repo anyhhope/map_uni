@@ -196,4 +196,9 @@
     .menu-left-content {
         margin-right: 10px;
     }
+
+    .menu-content-info {
+        font-size: 12px;
+        line-height: normal;
+    }
 }
