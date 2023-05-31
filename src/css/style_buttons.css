@@ -132,10 +132,6 @@
         width: 40px;
     }
 
-    /* .buttons-floor-wrap {
-        width: 40px;
-    } */
-
     .buttons-floor, 
     .btn-home-wrap, 
     .btn-home {
@@ -151,4 +147,32 @@
         margin-top: 18px;
     }
 
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .buttons {
+        width: 40px;
+        bottom: 40px;
+    }
+
+    .buttons-add,
+    .btn-home-wrap, 
+    .btn-home {
+        width: 40px;
+    }
+
+    .buttons-floor, 
+    .btn-home-wrap, 
+    .btn-home {
+        height: 40px;
+    }
+
+    #buttons-floor-home,
+    #buttons-floor-back {
+        border-radius: 16px;
+    }
+
+    .btn-home-wrap {
+        margin-top: 18px;
+    }
 }
