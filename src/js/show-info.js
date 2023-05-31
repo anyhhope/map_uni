@@ -18,18 +18,18 @@ menuButtons.forEach(btn => btn.addEventListener('click', () => {
     if(btn.classList.contains('menu-btn-active')) {
         let typeOfBtn = btn.id.slice(4);
         blockInfo.innerHTML = json[typeOfBtn].info[lang];
-        blockInfo.style.animation = 'showBlock 0.8s linear forwards';
+        // blockInfo.style.animation = 'showBlock 0.8s linear forwards';
         btn.innerHTML += '  ←';
         menuImg.src = json[typeOfBtn].imglink;
         // menuImg.alt = json_lang[typeOfBtn][lang];
-        menuImg.style.animation = 'showBlock 0.8s linear forwards';
+        // menuImg.style.animation = 'showBlock 0.8s linear forwards';
     }
     else {
-        menuImg.style.animation = '';
+        // menuImg.style.animation = '';
         menuImg.src = json.imglink;
         menuImg.alt = json.title;
         blockInfo.innerHTML = '';
         btn.innerHTML = btn.innerHTML.slice(0, btn.innerHTML.length - 3);
-        blockInfo.style.animation = '';
+        // blockInfo.style.animation = '';
     }
 }));
