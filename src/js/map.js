@@ -21,6 +21,7 @@ function firstFloor(firstFloor) {
 
 //выбор этажа по кнопке
 const btnFloor = document.querySelectorAll('.buttons-floor');
+const btnFloorAll = document.querySelector('.buttons-floor-wrap');
 const btnArrow = document.querySelector('.btn-floor-back-wrap');
 const btnHome = document.querySelector('.btn-home-wrap');
 
@@ -76,6 +77,7 @@ btnHome.addEventListener('click', () => {
         wasArrow = false;
     }
     allBuildings.classList.toggle('hidden');
+    btnFloorAll.classList.toggle('hidden');
 });
 
 function changeClass(el, className) {
