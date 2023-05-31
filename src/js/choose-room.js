@@ -11,6 +11,7 @@ const bBuilding = [
         restroom: ['b-0-toilet-w', 'b-0-toilet-m'],
         food: ['b-0-snack-background'],
         money: ['bankomat-icon-background', 'bankomat-icon-background_2'],
+        canteen: [],
     },
     {
         lounge: ['b-1-lounge-zone-1', 'b-1-lounge-zone-2', 'b-1-lounge-zone-3', 'b-1-lounge-zone-4'],
@@ -24,6 +25,7 @@ const bBuilding = [
         restroom: ['b-1-toilet-w', 'b-1-toilet-m', 'b-1-toilet-m-invalid'],
         food: [],
         money: [],
+        canteen: ['canteen'],
     },
     {
         lounge: ['b-2-lounge-zone-1', 'b-2-lounge-zone-2', 'b-2-lounge-zone-3', 'b-2-lounge-zone-4'],
@@ -37,6 +39,7 @@ const bBuilding = [
         restroom: ['b-2-toilet-w', 'b-2-toilet-m'],
         food: [],
         money: [],
+        canteen: [],
     }
 ]
 
@@ -52,6 +55,7 @@ const colors = {
     restroom: '#0a1e64',
     food: '#0a1e64',
     money: '#0a1e64',
+    canteen: '#ff9100',
 }
 
 //изменения цвета всех элементов по кнопке
