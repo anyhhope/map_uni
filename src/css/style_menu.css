@@ -68,7 +68,6 @@
     animation: showBlock 0.3s linear forwards;
 }
 
-
 .menu-btn:hover {
     opacity: 0.7;
     cursor: pointer;
@@ -84,9 +83,7 @@
     align-items: center;
 }
 
-.btn-to-open,
-.btn-to-open-right,
-.btn-to-open-left {
+.btn-to-open {
     width: 15px;
     height: 50px;
     padding-right: 16px;
@@ -96,14 +93,6 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
-}
-
-.btn-to-open-right {
-    background-image: url(../assets/images/menu-button-right.svg);
-}
-
-.btn-to-open-left {
-    background-image: url(../assets/images/menu-button-left.svg);
 }
 
 @keyframes showBlock {

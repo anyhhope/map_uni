@@ -47,6 +47,6 @@
       ru: 'Столовая НИТУ МИСИС является одной из лучших столовых в Москве. Она предлагает разнообразное меню, включающее в себя блюда русской, европейской и азиатской кухни. Столовая имеет большое количество мест, что позволяет без труда разместить всех посетителей. Это идеальное место для здорового и вкусного питания студентов и персонала университета.',
       en: 'University MISIS canteen is one of the best canteens in Moscow. It offers a varied menu, including dishes of Russian, European and Asian cuisine. The dining room has a large number of seats, which allows you to easily accommodate all visitors. This is an ideal place for healthy and delicious meals for students and university staff.',
     },
-    imglink: 'assets/images_html/misis-stairs.jpg',
+    imglink: 'assets/images_html/canteen.jpg',
   }
 }
