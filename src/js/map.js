@@ -84,3 +84,42 @@ function changeClass(el, className) {
     if (el.classList.contains(className)) el.classList.remove(className);
     else el.classList.add(className);
 }
+
+const gBuilding = document.getElementById('g_camp');
+const gRBuilding = document.getElementById('gr_camp');
+const bBuilding = document.getElementById('b_camp');
+const line = document.getElementById('line');
+const line2 = document.getElementById('line2');
+const group = document.getElementById('misis-buildings!');
+
+gBuilding.addEventListener('click', () => {
+    line.classList.toggle('hidden');
+})
+
+gRBuilding.addEventListener('click', () => {
+    line2.classList.toggle('hidden');
+})
+
+// group.innerHTML += '<path id="sport_camp2" d="M74.8856 223.483V240.999H103.007V143.988H95.2493V112.999H71.0068V223.483H74.8856Z" fill="#C0D5A1" stroke="#002021"></path>';
+// group.innerHTML += '<path id="green-rect" d="M618 373L641.383 412.75H594.617L618 373Z" fill="#1A782E"/>';
+
+var newElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+// Установка атрибутов элемента path
+newElement.setAttribute("id", "green-rect");
+newElement.setAttribute("d", "M618 373L641.383 412.75H594.617L618 373Z");
+newElement.setAttribute("fill", "#1A782E");
+
+// Добавление нового элемента в DOM
+
+
+bBuilding.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    if (group.contains(newElement)) {
+        group.removeChild(newElement);
+    }
+    else {
+        group.appendChild(newElement);
+    }
+})
+
